@@ -98,6 +98,7 @@ $(document).ready(function () {
 	$(".photoSelect").click(function (e) {
 		e.preventDefault();
 		e.preventDefault();
+		console.log("photoselect button clicked");
 		FB.login(function (response) {
 			if (response.authResponse) {
 				fbphotoSelect();
